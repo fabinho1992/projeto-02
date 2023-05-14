@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+
+    --cor-secao-01:hsl(31, 77%, 52%);
+    --cor-secao-02:hsl(184, 100%, 22%);
+    --cor-secao-03:hsl(179, 100%, 13%);
+    --cor-texto:hsla(0, 0%, 100%, 0.75);
+    --cor-principal:hsl(0, 0%, 95%);
+    --fonte-primaria: 'Lexend Deca', sans-serif;
+    --fonte-secundaria:'Big Shoulders Display', cursive;
+}
+
+body{
+
+    background-color: var(--cor-principal);
+    height: 100vh;
+    box-sizing: border-box;
+    font-size: 15px;
+    
+}
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    
+    
+    
+}
+
+.container__deposito{
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.container__conteudo{
+
+    padding: 3rem;
+}
+
+.secao01{
+    
+    background-color: var(--cor-secao-01);
+    border-radius: 10px 10px 0 0;
+    color: var(--cor-secao-01);
+}
+
+.secao02{
+
+    background-color: var(--cor-secao-02);
+    color: var(--cor-secao-02);
+}
+
+.secao03{
+
+    background-color: var(--cor-secao-03);
+    border-radius: 0 0 10px 10px;
+    color: var(--cor-secao-03);
+    
+}
+
+.container__conteudo-titulo{
+
+    color: var(--cor-principal);
+    text-transform: uppercase;
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 1.5rem 0;
+}
+
+.container__conteudo-texto{
+    color: var(--cor-texto);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    padding-bottom: 1.5rem;
+}
+
+.botao{
+
+    background-color: var(--cor-principal);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+@media screen and (min-width : 1440px) {
+
+    .container{
+        display: flex;
+        align-items: center;
+        
+    }
+    .container__deposito{
+         
+        display: flex;
+        width: 70%;
+        
+    }
+
+    .container__conteudo-titulo{
+        padding: 2rem 0;
+        font-size: 3rem;
+    }
+
+    .container__conteudo-texto{
+
+        padding-bottom: 12em;
+        margin-right: 3rem;
+        line-height: 2rem;
+    }
+
+    .secao01{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .secao03{
+        border-radius: 0 10px 10px 0;
+    }
+    
+    .botao{
+        border-radius: 30px;
+
+    }
+}
